@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<title>Radha Krishna Repo Agency</title>
+	<style>
+		html, body{
+          height: 100%;
+        }
+        body {
+			background: url("{% static 'home.jpg' %}") no-repeat center center fixed;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+        }
+
+        div, body{
+          margin: 0;
+          padding: 0;
+          font-family: exo, sans-serif;
+
+        }
+        .wrapper {
+          height: 100%;
+          width: 100%;
+        }
+
+        .message {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 100%;
+          height:20%;
+          bottom: 0;
+          display: block;
+          position: absolute;
+          background-color: rgba(0,0,0,0.6);
+          color: #fff;
+          padding: 0.5em;
+        }
+        .button {
+          margin: 30px;
+          float: right;
+          display: inline-block;
+          padding: 15px 25px;
+          font-size: 24px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #4CAF50;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+          background-color: #3e8e41;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+	</style>
+</head>
+<body>
+<a href = '/admin'><button class="button">Login</button>
+</a>
+
+<div class="wrapper">
+  <div class="message">
+    <h1>Radha Krishna Repo Agency Portal</h1>
+    <p>Welcome to Radha Krishna Repo Agency</p>
+  </div>
+</div>
+
+
+</body>
+</html>
+
